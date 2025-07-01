@@ -230,7 +230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ac68517a200b1456bb8de022731396ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.025
+      value: -0.035
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ac68517a200b1456bb8de022731396ae, type: 3}
       propertyPath: m_LocalPosition.z
@@ -264,6 +264,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ac68517a200b1456bb8de022731396ae, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fa84d96ae3cfc4b29a79c3464f9443b6, type: 2}
     - target: {fileID: 919132149155446097, guid: ac68517a200b1456bb8de022731396ae, type: 3}
       propertyPath: m_Name
       value: terrain
