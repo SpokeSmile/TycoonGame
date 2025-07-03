@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 79b86a91e143c49d2a634dc146b06f0d
+guid: f9d0065825ac348bb85d512cc6abf420
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,13 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: 59d8985d9f4e549e889e89ce0061a1cb, type: 2}
+      name: Plata
+    second: {fileID: 2100000, guid: df01100d362fb4384ae3f7d3375e1a3e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.003
+      name: Socket
+    second: {fileID: 2100000, guid: d6aa838b53e5e46dc87c1c3bd298922f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: balk_black
     second: {fileID: 2100000, guid: 6d4171491518f4984b550d44fdf380b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: soldering
+    second: {fileID: 2100000, guid: 23476a84480224a7b82a37ae6c023819, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 79b86a91e143c49d2a634dc146b06f0d
+guid: 6103d8b43efc942bd820ae66dc09499a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,13 +7,53 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.001
+      name: Garage
     second: {fileID: 2100000, guid: 59d8985d9f4e549e889e89ce0061a1cb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.003
+      name: bush
+    second: {fileID: 2100000, guid: df01100d362fb4384ae3f7d3375e1a3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door
+    second: {fileID: 2100000, guid: 981d0920e6b684864aba3c67416dd776, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door handle
     second: {fileID: 2100000, guid: 6d4171491518f4984b550d44fdf380b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor
+    second: {fileID: 2100000, guid: 84a9087b849df4ea596049e48b22486e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grass_2
+    second: {fileID: 2100000, guid: 27f985558830e40e99bed5fce27c9011, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roof
+    second: {fileID: 2100000, guid: a7b5da5263ac74bd0ada53a8bf4eeb64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sidewalk
+    second: {fileID: 2100000, guid: d6aa838b53e5e46dc87c1c3bd298922f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall
+    second: {fileID: 2100000, guid: 6d4171491518f4984b550d44fdf380b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall2
+    second: {fileID: 2100000, guid: ea69ed99eccc8414599362cc79f78a04, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

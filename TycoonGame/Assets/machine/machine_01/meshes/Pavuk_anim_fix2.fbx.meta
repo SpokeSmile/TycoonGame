@@ -8,22 +8,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material
-    second: {fileID: 2100000, guid: 763fbe1d0de0141b19b897e0b3e56d8a, type: 2}
+    second: {fileID: 2100000, guid: 6d4171491518f4984b550d44fdf380b0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.001
-    second: {fileID: 2100000, guid: f30e0f7d15d39437883d5e579e75ed4d, type: 2}
+    second: {fileID: 2100000, guid: 6d4171491518f4984b550d44fdf380b0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: purple_light
-    second: {fileID: 2100000, guid: b08e83111c03143299a9df1875bba8af, type: 2}
+    second: {fileID: 2100000, guid: a7b5da5263ac74bd0ada53a8bf4eeb64, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: stanok_case
-    second: {fileID: 2100000, guid: 35618a779de174739a4c77a9facf2fd6, type: 2}
+    second: {fileID: 2100000, guid: 6d4171491518f4984b550d44fdf380b0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

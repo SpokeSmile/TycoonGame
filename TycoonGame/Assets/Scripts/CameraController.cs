@@ -7,10 +7,10 @@ public class CameraController : MonoBehaviour
     private ushort sensitivityX = 1000;
     private ushort sensitivityY = 1500;
 
-    private float maxX = -2.5f;  
-    private float minX = -5.5f; 
-    private float maxZ = 7f; 
-    private float minZ = 4f; 
+    private float maxX = -1.9f;  
+    private float minX = -4.9f; 
+    private float maxZ = 6.15f; 
+    private float minZ = 3.15f; 
 
     private Mouse mouse;
 
@@ -21,7 +21,7 @@ public class CameraController : MonoBehaviour
 
     void Start()
     {
-        transform.position = new Vector3(-4f, 6f, 5.5f); 
+        transform.position = new Vector3(-3.4f, 6f, 4.65f); 
         transform.rotation = Quaternion.Euler(45, 145, 0); 
         Camera.main.orthographicSize = 2f; 
     }
@@ -37,7 +37,7 @@ public class CameraController : MonoBehaviour
         Vector2 normalizedDelta = new Vector2(delta.x / screenSize.x, delta.y / screenSize.y);
 
  
-        Vector3 localMove = new Vector3(normalizedDelta.x * sensitivityX * 5f, 0f, normalizedDelta.y * sensitivityY * 5f);
+        Vector3 localMove = new Vector3(normalizedDelta.x * sensitivityX, 0f, normalizedDelta.y * sensitivityY);
 
         Vector3 worldMove = transform.rotation * localMove;
         worldMove.y = 0f; 
