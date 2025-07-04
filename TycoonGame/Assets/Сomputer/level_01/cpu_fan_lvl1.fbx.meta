@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b0e26306b010a46d4ac6f417c0eecc8e
+guid: e9488233ac4354e55aa756ecd982884f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,12 +7,12 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: balk_black
-    second: {fileID: 2100000, guid: 6d4171491518f4984b550d44fdf380b0, type: 2}
+      name: Dark_Slate_Blue
+    second: {fileID: 2100000, guid: 84a9087b849df4ea596049e48b22486e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: machine.._
+      name: Near_Black_
     second: {fileID: 2100000, guid: 6d4171491518f4984b550d44fdf380b0, type: 2}
   materials:
     materialImportMode: 2

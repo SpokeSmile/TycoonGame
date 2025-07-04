@@ -1,6 +1,5 @@
- 
 using UnityEngine;
-using UnityEngine.UIElements;
+
 
 public class Spawner : MonoBehaviour
 {
@@ -13,17 +12,17 @@ public class Spawner : MonoBehaviour
    void Update()
     {
         if (Time.time >= nextSpawnTime)
+        {
+            GameObject newBoard = Instantiate(motherboard_board, SpawnPosition.transform.position, Quaternion.identity);
+
+            ConveyorMovement conveyorMovement = newBoard.GetComponent<ConveyorMovement>();
+            if (conveyorMovement != null)
             {
-                GameObject newBoard = Instantiate(motherboard_board, SpawnPosition.transform.position, Quaternion.identity);
+                conveyorMovement.EndPosition = EndPosition.transform;
+            }
 
-                ConveyorMovement conveyorMovement = newBoard.GetComponent<ConveyorMovement>();
-                if (conveyorMovement != null)
-                {
-                    conveyorMovement.EndPosition = EndPosition.transform;
-                }
-
-                nextSpawnTime = Time.time + spawnInterval;
-
+            nextSpawnTime = Time.time + spawnInterval;
+            
 
             }
     }

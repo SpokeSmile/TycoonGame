@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class ConveyorMovement : MonoBehaviour
 {
-    public MeshRenderer mesh_board;
-    public MeshRenderer mesh_motherboard;
-    // public MeshRenderer mesh_CPU;
-    public MeshRenderer mesh_funCPU;
-    public MeshRenderer mesh_GPU;
-    public MeshRenderer mesh_RAM;
-    public MeshRenderer mesh_case;
-    public MeshRenderer mesh_case_door;
-    
+    [SerializeField] private GameObject board_lvl1;
+    [SerializeField] private MeshRenderer mesh_board;
+    [SerializeField] private MeshRenderer mesh_motherboard;
+    [SerializeField] private MeshRenderer mesh_CPU;
+    [SerializeField] private MeshRenderer mesh_funCPU;
+    [SerializeField] private MeshRenderer mesh_GPU;
+    [SerializeField] private MeshRenderer mesh_RAM;
+    [SerializeField] private MeshRenderer mesh_case;
+    [SerializeField] private MeshRenderer mesh_case_door;
+
     private bool isTouchingStation = false;
     public bool IsTouchingStation => isTouchingStation;
 
@@ -22,26 +23,33 @@ public class ConveyorMovement : MonoBehaviour
         mesh_board.enabled = true;
 
         mesh_motherboard.enabled = false;
-        // mesh_CPU.enabled = false;
+        mesh_CPU.enabled = false;
         mesh_funCPU.enabled = false;
         mesh_GPU.enabled = false;
         mesh_RAM.enabled = false;
+        mesh_case.enabled = false;
+        mesh_case_door.enabled = false;
     }
 
     void Update()
     {
-        
-        mesh_case.enabled = false;
-        mesh_case_door.enabled = false;
+
+
         if (isTouchingStation)
         {
             MoveToTarget();
-            mesh_motherboard.enabled = true;
             mesh_board.enabled = false;
+            mesh_motherboard.enabled = true;
+            
         }
         else
         {
             MoveToTarget();
+        }
+
+        if (Vector3.Distance(transform.position, EndPosition.transform.position) < 0.1f)
+        {
+            Destroy(gameObject);
         }
     }
 
