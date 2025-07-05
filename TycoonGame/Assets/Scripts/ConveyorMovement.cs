@@ -18,8 +18,12 @@ public class ConveyorMovement : MonoBehaviour
     public Transform EndPosition;
     public float speed = 0.5f;
 
+    private Animator animator;
+
     void Start()
     {
+        animator = GetComponent<Animator>();
+
         mesh_board.enabled = true;
 
         mesh_motherboard.enabled = false;
@@ -33,18 +37,19 @@ public class ConveyorMovement : MonoBehaviour
 
     void Update()
     {
-
-
         if (isTouchingStation)
         {
             MoveToTarget();
             mesh_board.enabled = false;
             mesh_motherboard.enabled = true;
-            
+
+            // Запускаем анимацию
+            animator.SetTrigger("StartAnimation"); // Имя триггера должно соответствовать имени триггеру в вашем Animation Controller
         }
         else
         {
             MoveToTarget();
+            animator.SetTrigger("Wait");
         }
 
         if (Vector3.Distance(transform.position, EndPosition.transform.position) < 0.1f)
@@ -73,5 +78,4 @@ public class ConveyorMovement : MonoBehaviour
             isTouchingStation = false;
         }
     }
-
 }
