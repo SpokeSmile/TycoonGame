@@ -23,7 +23,7 @@ public class CameraController : MonoBehaviour
     {
         transform.position = new Vector3(-3.4f, 6f, 4.65f); 
         transform.rotation = Quaternion.Euler(45, 145, 0); 
-        Camera.main.orthographicSize = 2f; 
+        Camera.main.orthographicSize = 2.25f; 
     }
 
     void Update()
